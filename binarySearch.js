@@ -351,8 +351,8 @@ const prettyPrint = (node, prefix = "", isLeft = true) => {
   }
 };
 
+//create an array of numbers 1 - 100 in random order
 function getArray() {
-  //create an array of numbers 1 - 100 in random order
   let newArray = [];
   while (newArray.length < 100) {
     let newNum = Math.floor(Math.random() * 100) + 1;
@@ -399,13 +399,13 @@ console.log("\nNode not found!");
 console.log("\nRoot height: " + testTree.height(testTree.root)); // root height = 6
 console.log(
   "Height of Node containg value of 9: " + testTree.height(testTree.find(9))
-); // height = 3
+); // height = 4
 console.log(
   "Depth of Node containing value of 17: " + testTree.depth(testTree.find(17))
 ); // depth = 6
+console.log("\n");
 
 //test different tree traversal methods
-
 prettyPrint(testTree.root); //tree to verify traversal against;
 console.log("Level Order traversal Method:");
 for (let i = 0; i < testTree.levelOrder().length; i++) {
